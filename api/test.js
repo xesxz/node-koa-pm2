@@ -12,7 +12,7 @@ router.get('/api', (ctx, next) => {
   ctx.body = "here is users"
 }).all('/api/users/:id', (ctx, next) => {
 
-}).post('bk/login', async (ctx) => {
+}).post('/bk/login', async (ctx) => {
   let loginUser = ctx.request.body,
     userName = loginUser.userName,
     password = loginUser.password
