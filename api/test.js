@@ -19,7 +19,10 @@ router.get('/api', (ctx, next) => {
   if (userName == 'zhanglei' && password == 123) {
     ctx.body = {
       code: 200,
-      message: true
+      data: {
+        displayName: '张磊',
+        token: 'asfdg'
+      }
     }
   } else {
     ctx.body = {
